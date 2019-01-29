@@ -12,7 +12,7 @@ body {
     margin-left: auto;
 }
 .header {
-    padding: 0 8rem 1rem 8rem;
+    padding: 2rem 8rem 1rem 8rem;
 }
 
 .navigation a {
@@ -82,6 +82,9 @@ body {
     padding: 2rem 0;
     background-color: rgb(247, 243, 243);
 }
+.about p {
+    font-size: 1rem;
+}
 .section-heading {
     text-align: center;
     margin-bottom: 1rem;
@@ -126,8 +129,7 @@ body {
 
 .cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-    grid-template-rows: repeat(auto-fit, max-content);
+    grid-template-columns: repeat(3, minmax(min-content, 1fr));
     grid-gap: 2rem;
     align-items: center;
     justify-items: center;
@@ -168,16 +170,6 @@ body {
 }
 .port-nav {
     margin: 2rem;
-}
-@media screen and (min-width: 1200px) {
-    .port-nav {
-        margin-left: 25rem;
-    }
-}
-@media screen and (min-width: 2000px) {
-    .port-nav {
-        margin-left: 40rem;
-    }
 }
 .port-nav li {
     list-style: none;
@@ -294,12 +286,15 @@ body {
     border-radius: 3px;
     color: rgb(182, 178, 178);
     margin-bottom: 1rem;
-    width: 46.6%;
-    margin-right: auto;
-    margin-left: auto;
 }
 .form {
-    max-width: 100%;
+    max-width: 80rem;
+}
+.first-form {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-gap: .5rem;
 }
 .input-2 {
     width: 100%;
@@ -418,6 +413,16 @@ body {
     .contact {
         float: none;
         width: 100%;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+        align-items: center;
+        justify-items: center;
+        align-content: center;
+        padding: 1rem;
     }
     .portfolio {
         margin: 0;
