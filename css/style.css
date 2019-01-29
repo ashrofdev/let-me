@@ -150,8 +150,12 @@ body {
 }
 .port-nav {
     margin: 2rem;
-    text-align: center;
-    margin-left: 18rem;
+}
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .box-head {
@@ -164,8 +168,6 @@ body {
 }
 .port-nav {
     margin: 2rem;
-    text-align: center;
-    margin-left: 18rem;
 }
 @media screen and (min-width: 1200px) {
     .port-nav {
@@ -283,7 +285,7 @@ body {
 }
 
 .contact-me {
-    padding: 2rem 12rem;
+    padding: 2rem 15rem;
 }
 .input {
     border: none;
@@ -292,7 +294,7 @@ body {
     border-radius: 3px;
     color: rgb(182, 178, 178);
     margin-bottom: 1rem;
-    width: 47.1%;
+    width: 46.6%;
     margin-right: auto;
     margin-left: auto;
 }
@@ -302,6 +304,7 @@ body {
 .input-2 {
     width: 100%;
 }
+
 .textarea {
    width: 100%;
    height: 7rem;
