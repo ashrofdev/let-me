@@ -192,9 +192,6 @@ body {
 .mag {
     padding: 2rem 0;
 }
-.por-img {
-    width: 31%;
-}
 .portfolio {
     text-align: center;
 }
@@ -365,7 +362,6 @@ body {
         margin-top: 1rem;
     }
     .logo {
-        margin-left: 3rem;
         border-left: 1px solid rgba(245, 104, 104, 0.596);
         border-right: 1px solid rgba(245, 104, 104, 0.596);
         padding: 0 1rem;
@@ -523,5 +519,23 @@ body {
         grid-template-columns: 1fr;
         padding-bottom: .4rem;
         grid-gap: .3rem;
+    }
+    .head {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    
+}
+@media screen and (max-width: 500px) {
+    .navigation ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-contact {
+        grid-column: 2 / 3;
     }
 }
