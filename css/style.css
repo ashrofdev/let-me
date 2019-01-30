@@ -539,3 +539,10 @@ body {
         grid-column: 2 / 3;
     }
 }
+.header .head .navigation ul .home {
+    color: rgb(247, 74, 74);
+}
+.port-nav .all {
+    background-color: rgb(247, 74, 74);
+    color: white;
+}
